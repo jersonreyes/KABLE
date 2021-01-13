@@ -1,6 +1,7 @@
 <?php
 
 // KABLE NETWORK CODEBASE
+// JERSON REYES
 
 // CREATE NEW USER DIRECTORY
 function newuser($newuser, $user_id) {
