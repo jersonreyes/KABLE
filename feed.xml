@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<chatfeed>
+  <message>
+    <senderid>HEADER</senderid>
+    <read>NULL</read>
+    <read_by>NULL</read_by>
+    <messageid>NULL</messageid>
+    <messagecontent>DO NOT TOUCH</messagecontent>
+    <time>NULL</time>
+    <sent_to>NULL</sent_to>
+  </message>
+  <message>
+    <senderid>HEADER</senderid>
+    <read>NULL</read>
+    <read_by>NULL</read_by>
+    <messageid>NULL</messageid>
+    <messagecontent>DO NOT TOUCH</messagecontent>
+    <time>NULL</time>
+    <sent_to>NULL</sent_to>
+  </message>
+  <message>
+    <senderid>1</senderid>
+    <read>0</read>
+    <read_by>1,3,</read_by>
+    <messageid>94947</messageid>
+    <messagecontent>This is a test. This is Jerson Reyes conversing with JM Morada. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </messagecontent>
+    <time>2021/01/11 8:11:02</time>
+    <sent_to>3</sent_to>
+  </message>
+  <message>
+    <senderid>1</senderid>
+    <read>0</read>
+    <read_by>1,2,</read_by>
+    <messageid>124514</messageid>
+    <messagecontent>This is a test. This is Jerson Reyes conversing with Louise Calooy. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </messagecontent>
+    <time>2021/01/13 07:45:02</time>
+    <sent_to>2</sent_to>
+  </message>
+  <message>
+    <senderid>1</senderid>
+    <read>0</read>
+    <read_by>1,2,</read_by>
+    <messageid>124514</messageid>
+    <messagecontent>This is a test. This is Jerson Reyes conversing with Miko Santos. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </messagecontent>
+    <time>2021/01/13 07:45:02</time>
+    <sent_to>4</sent_to>
+  </message>
+</chatfeed>
