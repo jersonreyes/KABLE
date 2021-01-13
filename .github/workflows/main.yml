@@ -1,0 +1,19 @@
+on: 
+    push:
+        branches:
+            - master
+name: Production Deploy
+jobs:
+  FTP-Deploy-Action:
+    name: FTP-Deploy-Action
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2.3.2
+      with:
+        fetch-depth: 2
+    - name: FTP-Deploy-Action
+      uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      with:
+        ftp-server: ftpupload.net
+        ftp-username: epiz_27619356
+        ftp-password: ${{ secrets.ftp_password }}
