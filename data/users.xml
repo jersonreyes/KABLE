@@ -1,0 +1,75 @@
+<?xml version='1.0'?>   
+<following>   
+    <user>
+		<id>1</id>
+		<username>jersonreyes</username>
+		<password>12345</password>
+        <first_name>Jerson</first_name>
+		<middle_name>Adriano</middle_name>
+		<last_name>Reyes</last_name>
+		<age>20</age>
+		<address>Caniogan, Calumpit, Bulacan, PH</address>
+		<active_status>1</active_status>
+		<ui_theme>Dark</ui_theme>
+		<followed_ids>2</followed_ids>
+		<picture>../users/images/jerson.jpg</picture>
+		<cover>../users/images/jersoncover.jpg</cover>
+		<description>Music, Programming, Visual/Digital Arts</description>
+		<email>jersonreyeadriano@gmail.com</email>
+		<gender>Boy</gender>
+    </user>
+    <user>
+		<id>2</id>
+		<username>louisecalooy</username>
+		<password>lcalooy</password>
+        <first_name>Louise</first_name>
+		<middle_name>Inocencio</middle_name>
+		<last_name>Calooy</last_name>
+		<age>20</age>
+		<address>Marilao, PH</address>
+		<active_status>0</active_status>
+		<ui_theme>Light</ui_theme>
+		<followed_ids>1</followed_ids>
+		<picture>../users/images/louise.jpg</picture>
+		<cover>../users/images/louisecover.jpg</cover>
+		<description>Otaku</description>
+		<email>louisecalooy@gmail.com</email>
+		<gender>Boy</gender>
+    </user>
+	<user>
+		<id>3</id>
+		<username>jmmorada</username>
+		<password>jmorada</password>
+        <first_name>JM</first_name>
+		<middle_name>D</middle_name>
+		<last_name>Morada</last_name>
+		<age>20</age>
+		<address>Malolos, PH</address>
+		<active_status>0</active_status>
+		<ui_theme>Light</ui_theme>
+		<followed_ids>1</followed_ids>
+		<picture>../images/person.svg</picture>
+		<cover>../users/images/louisecover.jpg</cover>
+		<description>JM lang sakalam</description>
+		<email>jmmorada@gmail.com</email>
+		<gender>Boy</gender>
+    </user>
+	<user>
+		<id>4</id>
+		<username>mikosantos</username>
+		<password>56789</password>
+        <first_name>Miko</first_name>
+		<middle_name>R</middle_name>
+		<last_name>Santos</last_name>
+		<age>20</age>
+		<address>Malolos, PH</address>
+		<active_status>0</active_status>
+		<ui_theme>Light</ui_theme>
+		<followed_ids>1</followed_ids>
+		<picture>../users/images/miko.jpg</picture>
+		<cover>../users/images/louisecover.jpg</cover>
+		<description>Youtuber</description>
+		<email>mikosantos@gmail.com</email>
+		<gender>Boy</gender>
+    </user>
+</following>
