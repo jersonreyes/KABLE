@@ -1,0 +1,9 @@
+{
+    "tasks": [
+        {
+            "label": "syncAll",
+            "type": "shell",
+            "command": "git add .;git commit -m 'Automatic Commit';git pull;git push",
+        }
+    ]
+}
