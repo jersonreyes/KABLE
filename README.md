@@ -12,7 +12,7 @@
 	Start reaching more people today.
 	Sign-up and start sharing.
 
-Developed, Designed, and Hosted by Jerson Reyes<Br/>
+Developed, designed, and hosted by Jerson Reyes<Br/>
 Property Artwork | Copyright © Jerson Reyes 2020<Br/>
 KBOL.GA | Creative Commons NC License<Br/>
 
