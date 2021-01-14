@@ -14,6 +14,7 @@
 
 Developed, designed, and hosted by Jerson Reyes<Br/>
 Copyright © Jerson Reyes 2020<Br/>
-KBOL.GA | Creative Commons NC License | Property Artwork<Br/>
+Creative Commons NC License<Br/>
+Property Artwork<Br/>
 
 Access at: **www.kbol.ga**
