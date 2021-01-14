@@ -9,7 +9,8 @@
 	╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ ╚══════╝╚══════╝
 
 Let's Go Global.<br/>
-Start reaching more people today. Sign-up and start sharing.
+Start reaching more people today.<br/>
+Sign-up and start sharing.
 
 	DEVELOPED, DESIGNED, AND HOSTED BY JERSON REYES
 	PROPERTY ARTWORK | COPYRIGHT © JERSON REYES 2020
