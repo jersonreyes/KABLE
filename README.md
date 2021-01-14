@@ -12,9 +12,9 @@
 	Start reaching more people today.
 	Sign-up and start sharing.
 
-	Developed, designed, and hosted by Jerson Reyes
-	Copyright © Jerson Reyes 2020
-	Creative Commons NC License
-	Property Artwork<
+	DEVELOPED, DESIGNED, AND HOSTED BY JERSON REYES
+	PROPERTY ARTWORK | COPYRIGHT © JERSON REYES 2020
+	
+	KBOL.GA | CREATIVE COMMONS NC LICENSE
 
 Access at: **www.kbol.ga**
