@@ -8,12 +8,12 @@
 	██║  ██╗██║  ██║██████╔╝███████╗███████╗
 	╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ ╚══════╝╚══════╝
 
-	Let's Go Global.<br/>
-	Start reaching more people today.<br/>
+	Let's Go Global.
+	Start reaching more people today.
 	Sign-up and start sharing.
 
-DEVELOPED, DESIGNED, AND HOSTED BY JERSON REYES<br/>
-PROPERTY ARTWORK | COPYRIGHT © JERSON REYES 2020<br/>
-KBOL.GA | CREATIVE COMMONS NC LICENSE<br/>
+Developed, Designed, and Hosted by Jerson Reyes<Br/>
+Property Artwork | Copyright © Jerson Reyes 2020<Br/>
+KBOL.GA | Creative Commons NC License<Br/>
 
 Access at: **www.kbol.ga**
