@@ -8,7 +8,7 @@
 	██║  ██╗██║  ██║██████╔╝███████╗███████╗
 	╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ ╚══════╝╚══════╝
 
-Welcome to KABLE. Let's Go Global.<br/>
+Let's Go Global.<br/>
 Start reaching more people today. Sign-up and start sharing.
 
 	DEVELOPED, DESIGNED, AND HOSTED BY JERSON REYES
