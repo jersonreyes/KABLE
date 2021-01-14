@@ -13,7 +13,7 @@
 	Sign-up and start sharing.
 
 Developed, designed, and hosted by Jerson Reyes<Br/>
-Property Artwork | Copyright © Jerson Reyes 2020<Br/>
-KBOL.GA | Creative Commons NC License<Br/>
+Copyright © Jerson Reyes 2020<Br/>
+KBOL.GA | Creative Commons NC License | Property Artwork<Br/>
 
 Access at: **www.kbol.ga**
