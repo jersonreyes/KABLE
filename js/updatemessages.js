@@ -77,10 +77,10 @@ function fetchUser($id) {
 function updateChat() {
 
     $.ajax({
-        url: "../feed.xml",
+        url: "../data/feed.xml",
         ifModified: true,
         success: function() {
-            $.get('../feed.xml', null, function(data, textStatus) {
+            $.get('../data/feed.xml', null, function(data, textStatus) {
                 $match = false;
                 $(data).find('message').each(function(index) {
                     if ($(data).find('senderid').eq(index).text() != 'HEADER') {

@@ -1,7 +1,7 @@
 <?php
 
-$users    = parseXML('../users.xml');
-$messages = parseXML('../feed.xml');
+$users    = parseXML('../data/users.xml');
+$messages = parseXML('../data/feed.xml');
 $active   = '';
 $sentto = '';
 

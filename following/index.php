@@ -16,8 +16,8 @@
 
 -->
 <?php
-	include('../handler.php');
-	$following = parseXML('../following.xml');
+	include('../php/handler.php');
+	$following = parseXML('../data/following.xml');
 	
 ?>
 <html>

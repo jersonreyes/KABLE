@@ -16,10 +16,22 @@
 
 -->
 <?php
-include ('../handler.php');
-$following = parseXML('../following.xml');
+include ('../php/handler.php');
+$following = parseXML('../data/following.xml');
 
 setcookie("user", 3, time() + (86400 * 30) , "/");
+$title = '';
+
+if(isset($_GET['id'])) {
+	$user_id = $_GET['id'];
+	foreach($following as $users){
+		foreach($users as $user){
+			if($user['id'] == $user_id) {
+				$title = $user["name"];
+			}
+		}
+	}
+}
 
 $conversing = '';
 if (isset($_GET['id'])) {
@@ -28,11 +40,10 @@ if (isset($_GET['id'])) {
 	$found = true;
 }
 
-
 ?>
 <html>
 <head>
-	<title>Messages</title>
+	<title><?php if(!empty($title)) echo $title; else {echo 'Messages';}?></title>
 	<link rel="SHORTCUT ICON" href="../images/KABLELogo.png"></link>
 	<link rel="STYLESHEET" href="../css/main.css"></link>
 	<meta property="og:url" content="https://www.kbol.ga/"/>
@@ -169,7 +180,7 @@ if (isset($_GET['id'])) {
 							<div class="side-chat-section">Direct Message</div>
 							
 							<?php 
-							include('../showconversation.php'); 
+							include('../php/showconversation.php'); 
 							if(!$found)
 								echo ('<div class="side-chat-user inline-block"><p class="side-chat-user-time" style="line-height:20px">You may have altered the url. Go to our main page.</p></div>');
 							?>
@@ -208,7 +219,7 @@ if (isset($_GET['id'])) {
 							</div>
 							<div id="chat-area"style="color:White" senderid="<?php echo $_GET['id'];?>">
 
-							<?php include('../showmessage.php'); ?>
+							<?php include('../php/showmessage.php'); ?>
 								<div id="send-area">
 									<div id="send-control">
 										<form name="chat" id="chat" method="POST">

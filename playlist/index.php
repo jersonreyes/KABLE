@@ -1,4 +1,4 @@
-<?php $user_id="1"?><!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <!--         
 
 	
@@ -16,16 +16,8 @@
 
 -->
 <?php
-	include('../handler.php');
-	$following = parseXML('../following.xml');
-	
-	foreach($following as $users){
-		foreach($users as $user){
-			if($user['id'] == $user_id) {
-				$title = $user["name"];
-			}
-		}
-	}
+	include('../php/handler.php');
+	$following = parseXML('../data/following.xml');
 						
 	setcookie("user", 1, time() + (86400 * 30), "/");					
 						
@@ -219,5 +211,5 @@
 </body>
 	<script src="../js/jquery.min.js"></script>
 <script src="../js/main.js"></script>
-<script src="../js/update.js"></script>
+<script src="../js/updatemessages.js"></script>
 </html>

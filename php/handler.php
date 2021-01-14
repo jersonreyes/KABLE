@@ -6,8 +6,8 @@
 // CREATE NEW USER DIRECTORY
 function newuser($newuser, $user_id) {
 	
-	$profile_base = "profile.php";
-	$copy_to = "users/$newuser/profile.php";
+	$profile_base = "../php/profile.php";
+	$copy_to = "../users/$newuser/profile.php";
 	
 	$path = pathinfo($copy_to);
 	if (!file_exists($path['dirname']))
@@ -101,7 +101,7 @@ function timeDifference($datefrom) {
 // STORE PASSED MESSAGE
 function storeMessage($msg, $time, $id, $message_id, $sent_to) {
 	
-	$chatfeed = simplexml_load_file("../feed.xml");
+	$chatfeed = simplexml_load_file("../data/feed.xml");
 	$message_node = $chatfeed->addChild("message");
 	$id_x = $message_node->addChild("senderid", $id);
 	$read_x = $message_node->addChild("read_by", "");
@@ -114,7 +114,7 @@ function storeMessage($msg, $time, $id, $message_id, $sent_to) {
 	$dom->preserveWhiteSpace = false;
 	$dom->formatOutput = true;
 	$dom->loadXML($chatfeed->asXML());
-	$dom->save('../feed.xml');
+	$dom->save('../data/feed.xml');
 	
 }
 
@@ -132,7 +132,7 @@ if(isset($_POST['message_id_read'])) {
 // FOR PHP ACCESS
 function setRead($id_read, $read_by) {
 	
-	$chatfeed = simplexml_load_file("../feed.xml");
+	$chatfeed = simplexml_load_file("../data/feed.xml");
 	$find_id = $chatfeed->xpath("message[messageid=$id_read]");
 	
 	foreach ($find_id as $id_result) {
@@ -148,7 +148,7 @@ function setRead($id_read, $read_by) {
 				$dom->preserveWhiteSpace = false;
 				$dom->formatOutput = true;
 				$dom->loadXML($chatfeed->asXML());
-				$dom->save('../feed.xml');
+				$dom->save('../data/feed.xml');
 			}
 		}
 	}
