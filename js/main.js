@@ -55,3 +55,10 @@ window.onload = function() {
 		}
 	}
 }
+
+$(document).ready(function() {
+	$('#dropdownList li').find("a").click(function(){
+	  
+	  $('#dropdown-button').html($(this).html()).append("    <span class='caret'></span>");
+	});
+  });

@@ -26,6 +26,8 @@
 	<title>KABLE® Network — Following</title>
 	<link rel="SHORTCUT ICON" href="images/KABLELogo.png"></link>
 	<link rel="STYLESHEET" href="css/main.css"></link>
+	<link href="css/fontawesome/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/fontawesome/css/brand-colors.css">
 	<meta property="og:url" content="https://www.kbol.ga/"/>
 	<meta property="og:type" content="Social Network"/>
 	<meta property="og:title" content="KABLE® Network | Let's Go Global"/>
@@ -124,26 +126,71 @@
 					<div class="inline" id="browse" title="Browse">
 						<img src="images/browse.svg" class="topbar-icons align-middle"></img>
 						<span class="align-middle" id="browse-text">Browse</span>
-						<img src="images/down.svg" height="10px" class="align-middle button space-left" title="Click to toggle"></img>
+						<span class="dropdown space-left">
+							<button id="dropdown-button" class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+								<img src="images/down.svg" height="10px" id="browse-toggle-btn" class="align-middle button space-left" title="Click to toggle"></img>
+							</button>
+							<label>
+								<input type="checkbox">
+								<ul>
+									<li><a href="?browse=game">Game</a></li>
+									<li><a href="?browse=entertainment">Entertainment</a></li>
+									<li><a href="?browse=educational">Educational</a></li>
+									<li class="divider"></li>
+									<li><a href="?browse=creator">Creator</a></li>
+								</ul>
+							</label>
+						</span>
+					
 					</div>
 					<div class="inline" id="search">
 						<img src="images/search.svg" class="topbar-icons align-middle"></img>
-						<input id="search-bar" class="align-middle" placeholder="Search Everything"></input>
+						<form method="GET" action="search/" class="inline">
+							<input id="search-bar" class="align-middle" name="search-input" placeholder="Search Everything"></input>
+						</form>
 					</div>
 					<div class="inline" id="main-feat">
 						<div class="right">
-							<div class="inline button">
-								<img src="images/create.svg" class="topbar-icons align-middle" title="Create a new post"></img>
+							<div class="inline">
+								<img src="images/create.svg" id="top-create-button" class="button topbar-icons align-middle" title="Create a new post"></img>
+								<div class="create-wrapper">
+									<a href="new/?video">
+										<div class="create-container">
+											<i class="fas fa-video-plus white"></i><span>New Video</span>
+										</div>
+									</a>
+									<a href="new/?post">
+										<div class="create-container">
+											<i class="fas fa-edit white"></i><span>New Post</span>
+										</div>
+									</a>
+								</div>
 							</div>
 							<div class="inline button top-icon">
-								<img src="images/message.svg" class="topbar-icons align-middle" title="Messages"></img>
+								<a href="message/">
+									<img src="images/message.svg" class="topbar-icons align-middle" title="Messages"></img>
+								</a>
 							</div>
-							<div class="inline button top-icon" title="Notifications">
-								<img src="images/bell.svg" class="topbar-icons align-middle"></img>
+							<div class="inline top-icon" title="Notifications">
+								<img src="images/bell.svg" id="notif-button" class="button topbar-icons align-middle"></img>
 								<div id="notif-number">2</div>
+								<div class="notif-wrapper">
+									<a href="#">
+										<div class="notif-container">
+											<i class="gray">23m</i><span>Jerson Reyes uploaded a video</span>
+										</div>
+									</a>
+									<a href="#">
+										<div class="notif-container">
+											<i class="gray">23m</i><span>Jerson Reyes uploaded a video</span>
+										</div>
+									</a>
+								</div>
 							</div>
 							<div class="inline button top-icon">
-								<img src="images/person.svg" height="40px" class="align-middle" title="Account"></img>
+								<a href="users/<?php if(isset($_COOKIE['user'])) echo $_COOKIE['user'];?>">
+									<img src="images/person.svg" height="40px" class="align-middle" title="Account"></img>
+								</a>
 							</div>
 						</div>
 					</div>

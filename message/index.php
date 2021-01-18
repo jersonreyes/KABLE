@@ -209,9 +209,11 @@ if (isset($_GET['id'])) {
 								?>
 								</div>
 								<div class="inline-block" style="transform:translateX(300px)">
-									<div class="inline main-chat-user-profile button" style="margin-left:0px">
-										<img src="../images/user.svg" height="20px">
-									</div>
+									<a href="../c/<?php if(isset($_GET['id'])) echo $_GET['id']; ?>">
+										<div class="inline main-chat-user-profile button" style="margin-left:0px">
+											<img src="../images/user.svg" height="20px">
+										</div>
+									</a>
 									<div class="inline main-chat-user-settings button" style="margin-left:10px">
 										<img src="../images/settings.svg" height="20px">
 									</div>

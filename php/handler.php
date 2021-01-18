@@ -6,14 +6,14 @@
 // CREATE NEW USER DIRECTORY
 function newuser($newuser, $user_id) {
 	
-	$profile_base = "../php/profile.php";
+	$profile_base = "users/profile.php";
 	$copy_to = "../users/$newuser/profile.php";
 	
 	$path = pathinfo($copy_to);
 	if (!file_exists($path['dirname']))
 		mkdir($path['dirname'], 0777, true);
 	
-	copy($profile_base,$copy_to);
+	copy($profile_base, $copy_to);
 	$filename = $copy_to;
 	$somecontent = "<?php \$user_id=\"$user_id\"?>";
 	$file = file_get_contents($filename);
