@@ -39,7 +39,8 @@
 									</div>
 										</div>
 								' . $clear . '');
-								return false;
+								//return false;
+								//continue;
 							}
 						}
 					}

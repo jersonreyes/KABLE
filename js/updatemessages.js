@@ -56,7 +56,7 @@ function showMessage($picture, $name, $ago, $message, $location, $own) {
 function fetchUser($id) {
     var response = null;
     $.ajax({
-        url: '../users.xml',
+        url: '../data/users.xml',
         type: 'get',
         dataType: 'xml',
         async: false,
