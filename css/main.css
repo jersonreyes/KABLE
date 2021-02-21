@@ -87,6 +87,14 @@ span {
 	margin-bottom:15%;
 }
 
+.spacer-fixed {
+	height:80px;
+}
+
+.post-picture:hover {
+	opacity:0.8;
+}
+
 .small {
 	font-size:0.8em;
 }
@@ -663,7 +671,56 @@ span, p {
 
 #sidebar.toggled {
 	width:70px;
+	position:fixed;
 	background-color: #312234;
+}
+
+#main-body {
+	transition:500ms ease;
+	margin-left:0px;
+}
+
+#posts {
+	font-weight:bold;
+	font-size:30px;
+}
+
+.post-picture {
+	width:220px;
+	height:150px;
+	background-size:cover;
+	border-radius: 15px;
+	margin-top:3%;
+}
+
+#post1 {
+	background-image: url('../users/images/posts/1.jpg');
+}
+
+#post2 {
+	background-image: url('../users/images/posts/2.jpg');
+}
+
+#post3 {
+	background-image: url('../users/images/posts/3.jpg');
+}
+
+#post4 {
+	background-image: url('../users/images/posts/4.jpg');
+}
+
+.post-picture p {
+	position:Relative;
+	top:110%;
+	color:White;
+}
+
+.center {
+	text-align:Center;
+}
+
+#sidebar.toggled ~ #main-body {
+	margin-left:75px;
 }
 
 #sidebar.toggled #main-sidebar{
@@ -1206,6 +1263,7 @@ a {
 	display: inline-block;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 14px;
+	z-index:100;
   }
   .dropdown:hover{
 	cursor:pointer;
@@ -1291,3 +1349,265 @@ a {
 	padding: 0;
   }
   
+  .login {
+	background-color:transparent;
+	border:none;
+	border-bottom: 1px solid white;
+	padding:10px;
+	min-width:300px;
+	padding-left:0px;
+	color:white;
+  }
+
+  .login::placeholder {
+	color: rgba(255, 255, 255, 0.726);;
+  }
+
+  #login-btn {
+	background-color: #7724eb;
+	color:White;
+	padding:10px 30px;
+	border-radius: 0px;
+	border: none;
+	transition: 200ms ease;
+	margin-top:20px;
+  }
+
+  #user-photo {
+	height:300px;
+	position:Relative;
+	z-index:0;
+  }
+
+  #cover-photo {
+	  background-image: url('../users/images/cover/jerson.jpg');
+	  height:100%;
+	  width:100%;
+	  border-radius:20px;
+	  background-size:cover;
+  }
+
+  #profile-info {
+	position:relative;
+	top:-45%;
+	left:5%;
+	margin-bottom:0;
+	padding-bottom:0;
+  }
+
+  #profile-content {
+	  margin-right:2%;
+  }
+
+  #user-info {
+	  margin-left:2%;
+	  margin-top:12%;
+	  width:70%;
+	  padding-top:5%;
+	  color:White;
+	  line-height:5px;
+	  vertical-align: middle;
+  }
+
+  #user-name {
+	font-size:30px;
+	font-weight: bold;
+  }
+
+  #user-description {
+	font-size:16px;
+	line-height:15px;
+	color:Gray;
+  }
+
+  #user-info a {
+	  margin-right:5%;
+	  font-weight:bold;
+  }
+
+  #profile-bc {
+	  margin-top:7%;
+  }
+
+  #user-actions {
+		position:Absolute;
+		right:100px;
+		width:100%:
+  }
+
+  #user-address {
+	font-size:16px;
+	color:Gray;
+  }
+
+  #profile-divider {
+	margin-top:-9%;
+	margin-left:-5%;
+	width:110%;
+  }
+
+  #profile-picture {
+	background-image: url('../users/images/profile/1.jpg');
+	height:200px;
+	width:200px;
+	border-radius:100%;
+	background-size:cover;
+	}
+
+  #signup-btn {
+	background-color: #7724eb;
+	color:White;
+	padding:20px 30px;
+	border-radius: 15px;
+	border: none;
+	font-size:16px;
+	transition: 200ms ease;
+	margin-top:20px;
+  }
+
+  #signup-btn:hover, #login-btn:hover {
+	background-color:white;
+	color:black;
+  }
+
+  .post-log {
+	  margin-top:25px;
+	  margin-bottom:100px;
+  }
+
+  .post-log a:nth-child(2) {
+	margin-left:20px;
+  }
+
+  .login:focus {
+	  outline:none;
+  }
+
+  .label {
+	margin-top:220px;
+  }
+
+  .signin {
+	margin-left:10px;
+  }
+
+  form {
+	  margin-bottom:100px;
+  }
+
+  .gender-btn {
+	background-color:transparent;
+	border:1px solid white;
+	border-radius:50px;
+	padding:5px 20px;
+	margin-top:10px;
+	margin-right:5px;
+	transition: 200ms ease;
+	color:White;
+  }
+
+ 	#male, #female, #others {
+	  display:none;
+  }
+  
+
+  #male:checked ~ #male-label, #female:checked ~ #female-label, #others:checked ~ #others-label {
+	  background-color:White;
+	  color:black;
+  }
+
+  .gender-btn:hover {
+	  color:black;
+	  background-color:white;
+  }
+
+	#message-icon {
+		font-size:25px;
+		margin-left:20px;
+	}
+
+  #follow-btn {
+	background-color: #7724eb;
+	color:White;
+	padding:15px 30px;
+	border-radius: 40px;
+	border: none;
+	transition: 200ms ease;
+  }
+
+  #follow-btn:hover {
+	background-color:White;
+	color:black;
+  }
+
+  .profile-nav {
+	transition: 200ms ease;
+	color:White;
+  }
+
+  #message-icon {
+	  transition: 200ms ease;
+  }
+
+  #message-icon:hover {
+	  color:Gray;
+  }
+
+  .profile-nav:hover {
+	color:gray;
+  }
+
+  .full-divider {
+	  height:1px;
+	  width:100%;
+	  background-color:#444444;
+  }
+
+  #story-container {
+	  position:absolute;
+	  top:0px;
+	  margin-top:100px;
+	  margin-left:-50px;
+	  z-index:200;
+	  padding:0px;
+	  padding-left:100px;
+	  width:100%;
+	  height:100%;
+	  backdrop-filter: blur(10px);
+  }
+
+  .story-block {
+	  height:700px;
+	  width:350px;
+	  border-radius:5px;
+	  padding:25px;
+	  padding-left:50px;
+	  color:White;
+	  display:inline-block;
+	  line-height:5px;
+	  margin-right:1%;
+	  background-size:cover;
+	  opacity:0.5;
+  }
+
+  .story-block.active {
+	opacity:1;
+  }
+  
+  #story-user-ago {
+	  color:rgb(206, 206, 206);
+  }
+
+  #storypic1 {
+	background-image: url('../users/images/story/1.jpg');
+  }
+
+  #storypic2 {
+	background-image: url('../users/images/story/2.jpg');
+  }
+
+
+  #story-title {
+	  color:white;
+	  font-size:25px;
+  }

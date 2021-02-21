@@ -139,9 +139,7 @@ function setRead($id_read, $read_by) {
 		$id = $id_result->read_by;
 		$read_ids = explode(',',$id);
 		if($id_result->senderid == $read_by || $id_result->sent_to == $read_by) {
-			if (in_array($read_by, $read_ids)) {
-			  //echo "Available";
-			} else {
+			if (!in_array($read_by, $read_ids)) {
 				$id_result->read_by .= $read_by . ',';
 				
 				$dom = new DOMDocument('1.0');

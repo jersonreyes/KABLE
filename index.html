@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<!--         
+
+	
+	██╗  ██╗ █████╗ ██████╗ ██╗     ███████╗
+	██║ ██╔╝██╔══██╗██╔══██╗██║     ██╔════╝
+	█████╔╝ ███████║██████╔╝██║     █████╗  
+	██╔═██╗ ██╔══██║██╔══██╗██║     ██╔══╝  
+	██║  ██╗██║  ██║██████╔╝███████╗███████╗
+	╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ ╚══════╝╚══════╝
+
+	DEVELOPED, DESIGNED, AND HOSTED BY JERSON REYES
+	PROPERTY ARTWORK | COPYRIGHT © JERSON REYES 2020
+	
+	KBOL.GA | CREATIVE COMMONS NC LICENSE
+
+--> 
+<html>
+<head>
+	<title>KABLE® Network — Following</title>
+	<link rel="SHORTCUT ICON" href="images/KABLELogo.png"></link>
+	<link rel="STYLESHEET" href="css/main.css"></link>
+	<link href="css/fontawesome/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/fontawesome/css/brand-colors.css">
+	<meta property="og:url" content="https://www.kbol.ga/"/>
+	<meta property="og:type" content="Social Network"/>
+	<meta property="og:title" content="KABLE® Network | Let's Go Global"/>
+	<meta property="og:description" content="Welcome to KABLE. Let's Go Global. Start reaching more people today. Sign-up and start sharing."/>
+	<meta property="og:image" content="https://www.kbol.ga/images/KABLEBNR.jpg" />
+	<meta charset="UTF-8"/>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<!--
+			SIDEBAR (TODO: DAPAT MAG TOGGLE ON MOBILE OR SMALLER SCREENS)
+			-->
+			<div id="sidebar" class="inline-block">
+				<div id="main-sidebar" class="border-right">
+					<div id="logo" class="inline-block align-middle">
+						<img src="images/KABLE.png" id="kable-logo-image" class="inline align-middle">
+						<div class="inline" id="kable-logo" style="line-height:0;">
+							<span class="align-middle logo-text">Kable</span><br/>
+							<p id="kable-network">Network</p>
+						</div>
+					</div>
+					<div id="hamburger" class="inline-block align-middle button active" title="Toggle Menu">
+						<div></div><div></div>
+					</div>
+					<div class="spacer"></div>
+					<div id="news-feed">
+						<p class="small sidebar-section-title">New Feeds</p>
+						<a href="feed/">
+							<div class="content">
+								<img src="images/feed.svg" class="sidebar-icons"></img>
+								<span>New Feed</span>
+							</div>
+						</a>
+						<a href="trending/">
+							<div class="content">
+								<img src="images/trend.svg" class="sidebar-icons"></img>
+								<span>Trending</span>
+							</div>
+						</a>
+						<a href="following/">
+							<div class="highlight content active">
+								<img src="images/user.svg" class="sidebar-icons"></img>
+								<span>Following</span>
+							</div>
+						</a>
+						<a href="my-videos/">
+							<div class="content">
+								<img src="images/video.svg" class="sidebar-icons"></img>
+								<span>Your Videos</span>
+								<img src="images/add.svg" class="sidebar-icons" id="add-video" title="Create Video"></img>
+							</div>
+						</a>
+						<a href="playlist/">
+							<div class="content">
+								<img src="images/list.svg" class="sidebar-icons"></img>
+								<span>Playlist</span>
+							</div>
+						</a>
+					</div>
+					<hr>
+					<div id="following"></div>
+				</div>
+			</div>
+			<!--
+			MAIN BODY (RIGHT SIDE)
+			-->
+			<div id="main-body" class="inline-block">
+				<!--
+				TOPBAR
+				-->
+				<div id="top-bar">
+					<div class="inline" id="browse" title="Browse">
+						<img src="images/browse.svg" class="topbar-icons align-middle"></img>
+						<span class="align-middle" id="browse-text">Browse</span>
+						<span class="dropdown space-left">
+							<button id="dropdown-button" class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+								<img src="images/down.svg" height="10px" id="browse-toggle-btn" class="align-middle button space-left" title="Click to toggle"></img>
+							</button>
+							<label>
+								<input type="checkbox">
+								<ul>
+									<li><a href="?browse=game">Game</a></li>
+									<li><a href="?browse=entertainment">Entertainment</a></li>
+									<li><a href="?browse=educational">Educational</a></li>
+									<li class="divider"></li>
+									<li><a href="?browse=creator">Creator</a></li>
+								</ul>
+							</label>
+						</span>
+					
+					</div>
+					<div class="inline" id="search">
+						<img src="images/search.svg" class="topbar-icons align-middle"></img>
+						<form method="GET" action="search/" class="inline">
+							<input id="search-bar" class="align-middle" name="search-input" placeholder="Search Everything"></input>
+						</form>
+					</div>
+					<div class="inline" id="main-feat">
+						<div class="right">
+							<div class="inline">
+								<img src="images/create.svg" id="top-create-button" class="button topbar-icons align-middle" title="Create a new post"></img>
+								<div class="create-wrapper">
+									<a href="new/?video">
+										<div class="create-container">
+											<i class="fas fa-video-plus white"></i><span>New Video</span>
+										</div>
+									</a>
+									<a href="new/?post">
+										<div class="create-container">
+											<i class="fas fa-edit white"></i><span>New Post</span>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="inline button top-icon">
+								<a href="message/">
+									<img src="images/message.svg" class="topbar-icons align-middle" title="Messages"></img>
+								</a>
+							</div>
+							<div class="inline top-icon" title="Notifications">
+								<img src="images/bell.svg" id="notif-button" class="button topbar-icons align-middle"></img>
+								<div id="notif-number">2</div>
+								<div class="notif-wrapper">
+									<a href="#">
+										<div class="notif-container">
+											<i class="gray">23m</i><span>Jerson Reyes uploaded a video</span>
+										</div>
+									</a>
+									<a href="#">
+										<div class="notif-container">
+											<i class="gray">23m</i><span>Jerson Reyes uploaded a video</span>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="inline button top-icon">
+								<a href="#">
+									<img src="images/person.svg" height="40px" class="align-middle" title="Account"></img>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--
+				BODY CONTENT
+				-->
+				<div id="body-content">
+					
+	</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</html>
