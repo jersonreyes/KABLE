@@ -1125,6 +1125,7 @@ a {
 	padding:2px;
 	margin-bottom: 10px;
 	border-radius: 2px;
+	margin-top:	30px;
 	text-align:Center;
 	color:White;
 	font-size:0.6em;
@@ -1578,9 +1579,19 @@ a {
 	  padding:0px;
 	  padding-left:100px;
 	  width:100%;
-	  height:100%;
+	  height:150%;
+	  display:none;
+	  opacity:0;
+	  transition: 500ms ease;
 	  backdrop-filter: blur(10px);
   }
+
+  #story-content {
+	  z-index:200;
+	  position:absolute;
+	  width:60%;
+  }
+ 
 
   .story-block {
 	  height:700px;
@@ -1592,17 +1603,25 @@ a {
 	  display:inline-block;
 	  line-height:5px;
 	  margin-right:1%;
+	  z-index:400;
 	  background-size:cover;
 	  opacity:0.5;
   }
 
+.story-bg {
+	position:fixed;
+	z-index:1;
+	width:100%;
+	top:0px;
+	left:0px;
+	height:100%;
+}
+
   #story-container {
 	  display:none;
+	  transition: 500ms ease;
   }
 
-  #story-container.active {
-	  display:Block;
-  }
 
   .story-block.active {
 	opacity:1;
@@ -1630,7 +1649,10 @@ a {
 	  border-radius:25px;
 	  background-color:rgba(255,255,255,0.1);
 	  width:220px;
+	  min-height:298px;
+	  margin-top:20px;
 	  margin-bottom: 5%;
+	  vertical-align: top;
 	  display:inline-block;
 	  margin-right:2%;
   }
@@ -1638,6 +1660,7 @@ a {
   .video-picture {
 	  height:130px;
 	  width:100%;
+	  background-size:cover;
 	  background-position:center;
 	  border-radius: 25px;
   }
@@ -1670,11 +1693,16 @@ a {
 	  height:20px;
 	  vertical-align: middle;
 	  border-radius:50px;
-	  width:auto;
+	  width:20px;
+	  font-size:0.4em;
   }
 
   .ago-time, .video-views {
 	  color:gray;
+  }
+
+  .video-views {
+	  float:Right;
   }
 
 
@@ -1684,6 +1712,11 @@ a {
   }
   #video-container {
 	  width:70%;
+	  transition: 200ms ease;
+  }
+
+  .video-container:hover {
+	  opacity:0.5;
   }
 
   #feed-video-container, #feed-video-container .container {

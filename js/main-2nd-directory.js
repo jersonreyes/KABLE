@@ -216,3 +216,25 @@ $.ajax({
 		})
 	}
 })
+
+
+//USER POSTS
+$.ajax({
+    url: "../../data/posts.xml",
+    success: function() {
+        $.get('../../data/posts.xml', null, function(user, textStatus) {
+            $(user).find('post').each(function(userindex) {
+				$title = $(user).find('title').eq(userindex).text();
+				$thumbnail = $(user).find('thumbnail').eq(userindex).text();
+				
+				$(`
+				<div id="profile-content" class="inline-block">
+                            <div class="post-picture" style="background-image: url('${$thumbnail}')">
+                                <p class="center">${$title}<p>
+                            </div> 
+                        </div>
+				`).appendTo('#user-posts-container');
+			})
+		})
+	}
+})

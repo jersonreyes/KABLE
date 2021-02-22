@@ -1,35 +1,67 @@
 <?xml version='1.0'?>   
 <feed>
     <video>
-        <title>Tulflix s05EP01 - Listen Look and Listen</title>
-        <thumbnail>../users/images/cover/jerson.jpg</thumbnail>
-        <channel_picture>../users/images/profile/1.jpg</channel_picture>
-        <channel_name>Jerson Reyes</channel_name>
+        <title>Why Nino should've won instead of Yotsuba</title>
+        <thumbnail>../users/images/posts/5.jpg</thumbnail>
+        <channel_picture>../users/images/profile/8.png</channel_picture>
+        <channel_name>JM Morada</channel_name>
         <ago>5h Ago</ago>
-        <views>2K Views</views>
+        <views>20M Views</views>
     </video>
     <video>
-        <title>Tulflix s05EP01 - Listen Look and Listen</title>
-        <thumbnail>../users/images/cover/jerson.jpg</thumbnail>
-        <channel_picture>../users/images/profile/1.jpg</channel_picture>
-        <channel_name>Jerson Reyes</channel_name>
-        <ago>5h Ago</ago>
-        <views>2K Views</views>
+        <title>Sexy Dance With The Kids</title>
+        <thumbnail>../users/images/posts/9.jpg</thumbnail>
+        <channel_picture>../users/images/profile/9.jpg</channel_picture>
+        <channel_name>Mark Joseph Vichozo</channel_name>
+        <ago>14h Ago</ago>
+        <views>69M Views</views>
     </video>
     <video>
-        <title>Tulflix s05EP01 - Listen Look and Listen</title>
-        <thumbnail>../users/images/cover/jerson.jpg</thumbnail>
-        <channel_picture>../users/images/profile/1.jpg</channel_picture>
-        <channel_name>Jerson Reyes</channel_name>
-        <ago>5h Ago</ago>
-        <views>2K Views</views>
+        <title>Computer tips for beginners and students</title>
+        <thumbnail>../users/images/profile/11.jpg</thumbnail>
+        <channel_picture>../users/images/profile/4.jpg</channel_picture>
+        <channel_name>Miko Santos</channel_name>
+        <ago>16h Ago</ago>
+        <views>419K Views</views>
     </video>
     <video>
-        <title>Tulflix s05EP01 - Listen Look and Listen</title>
-        <thumbnail>../users/images/cover/jerson.jpg</thumbnail>
-        <channel_picture>../users/images/profile/1.jpg</channel_picture>
-        <channel_name>Jerson Reyes</channel_name>
-        <ago>5h Ago</ago>
-        <views>2K Views</views>
+        <title>KWENTO</title>
+        <thumbnail>../users/images/posts/10.png</thumbnail>
+        <channel_picture>../users/images/profile/10.jpg</channel_picture>
+        <channel_name>Cong TV</channel_name>
+        <ago>20h Ago</ago>
+        <views>8M Views</views>
+    </video>
+    <video>
+        <title>Make your bones strong with these workouts!</title>
+        <thumbnail>../users/images/posts/7.jpg</thumbnail>
+        <channel_picture>../images/person.svg</channel_picture>
+        <channel_name>Ryan Villatema</channel_name>
+        <ago>23h Ago</ago>
+        <views>419K Views</views>
+    </video>
+    <video>
+        <title>Epic Money Guide: Episode 420 with JM</title>
+        <thumbnail>../users/images/posts/10.png</thumbnail>
+        <channel_picture>../users/images/profile/11.jpg</channel_picture>
+        <channel_name>Easy Money Tips</channel_name>
+        <ago>1 day Ago</ago>
+        <views>420K Views</views>
+    </video>
+    <video>
+        <title>Programming Tips for Beginners</title>
+        <thumbnail>../users/images/profile/11.jpg</thumbnail>
+        <channel_picture>../users/images/profile/4.jpg</channel_picture>
+        <channel_name>Miko Santos</channel_name>
+        <ago>2 days Ago</ago>
+        <views>500K Views</views>
+    </video>
+    <video>
+        <title>HMMMMMMMMM?</title>
+        <thumbnail>../users/images/posts/14.png</thumbnail>
+        <channel_picture>../users/images/posts/11.png</channel_picture>
+        <channel_name>John Mark</channel_name>
+        <ago>3 days Ago</ago>
+        <views>972K Views</views>
     </video>
 </feed>

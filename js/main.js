@@ -183,7 +183,7 @@ $.ajax({
 							`).appendTo("#comment-"+$id);
 						}
 					})
-					const player = new Plyr('video', {captions: {active: true}});
+					const player = new Plyr('video');
 				}
 				$(`</div>
 				</div><br/><br/><br/><br/>`).appendTo("#post");
@@ -232,7 +232,7 @@ $.ajax({
 					$status = '<div class="status relative right story-wrapper"></div>';
 				}
 				$(`
-				<div class="inline-block align-top story-container">
+				<div class="inline-block align-top story-container story">
 				${$status}
 				<div id="story-following">
 					<img src="../${$picture}" class="sidebar-following-person align-middle"></img>
@@ -314,4 +314,20 @@ $.ajax({
 
 loadvid(2,"#video-side");
 
-loadvid(8,"#playlist-container");
+loadvid(10,"#playlist-container");
+
+$(document).on("click", '.story', function(event) { 
+	$("#story-container").css("display","block");
+	$("#story-container").css("opacity","1");
+});
+
+$(document).on("click", '.story-bg', function(event) { 
+	$("#story-container").css("opacity","0");
+    setTimeout(function(){ 
+		$("#story-container").css("display","none");
+	}, 500);
+});
+
+$(document).on("click", '.video-container', function(event) { 
+	$(location).attr('href', '../videos/');
+})
