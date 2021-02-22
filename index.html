@@ -36,20 +36,32 @@
     </div>
     <div style="position:relative;top:50px;left:30%" class="inline-block">
         <img src="images/kable full logo.png" height="auto" width="300px"> 
-        <form action="following/index.html#">
+        <form id="loginform" onsubmit="return verify()" action="following/index.html">
             <p class="white" style="max-width:320px;font-size:18px">Connect with the people. Get access to thousands of content around the world.</p>
             <p class="white" style="font-size:18px;"><b>Login to Kable Network</b></p>
             <label class="white">Username</label><br/>
-            <input placeholder="Username" class="login"></input><br/><br/><br/>
+            <input placeholder="Username" class="login" id="login-username"></input><br/><br/><br/>
             <label class="white">Password</label><br/>
-            <input placeholder="Username" class="login" type="password"></input><br/>
+            <input placeholder="Username" class="login" id="login-password" type="password"></input><br/>
+            <p class="error">Wrong Username and Password combination. <br/>Default password and username: 12345 <br/>for project submission</p>
             <input id="login-btn" type="submit" value="Login"></input>
 
             <div class="post-log">
-                <a href="#" class="white bold">Signup</a>
+                <a href="signup/index.html" class="white bold">Signup</a>
                 <a href="#" class="white bold">Forgot Password</a>
         </div>
     </div>
     </form>
+    <script src="js/jquery.min.js"></script>
+    <script>function verify() {
+        $username = $("#login-username").val();
+        $password = $("#login-password").val();
+        if($username == "12345" && $password == "12345") {
+                e.preventDefault();
+        }	else {
+            $('.error').css('display','block');
+            return false;
+        }
+    }</script>
 </body>
 </html>
