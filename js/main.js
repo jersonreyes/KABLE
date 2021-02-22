@@ -69,25 +69,25 @@ $.ajax({
     success: function() {
         $.get('../data/userfeed.xml', null, function(posts, textStatus) {
             $(posts).find('post').each(function(userindex) {
-                $thumnail = $(posts).find('thumbnail').eq(userindex).text();
+                $thumbnail = $(posts).find('thumbnail').eq(userindex).text();
 				
 				$videourl = $(posts).find('video').eq(userindex).text();
 				$ago = $(posts).find('ago').eq(userindex).text();
 				$channel = $(posts).find('channel').eq(userindex).text();
 				$type = $(posts).find('type').eq(userindex).text();
-				$content = "";
+
 				$id = $(posts).find('id').eq(userindex).text();
                 if ($type == "text") {
-					
+						$postcontent = $(posts).find('postcontent').eq(userindex).text();
 						$(`
 						<div class="post">
 							<div class="post-contents">
-								<p>Sapagkat mahalaga, kung ang tao ay di-pipiliting manghawakan bilang ... at edukasyon na maitaguyod ang paggalang sa mga karapatan at kalayaang ito at sa ... Ang bawat tao'y may karapatan sa buhay, kalayaan at kapanatagan ng sarili.</p>
+								<p>${$postcontent}</p>
 							</div>
 							<div class="video-details" style="margin-top:-30px;" id="comment-${$id}">
 								<img src="../images/default.svg" height="15px" class="align-middle" id="video-type-title-image">
-								<div id="video-type-title" class="inline-block">John Mark Morada</div>
-								<div id="video-type-title" class="ago-time">2h ago</div>
+								<div id="video-type-title" class="inline-block">${$channel}</div>
+								<div id="video-type-title" class="ago-time">${$ago}</div>
 								<div id="react"  class="inline-block" style="width:50%;transform:translateX(250px)">
 									<div>
 										<img src="../images/like.svg" height="18px" class="inline">
@@ -133,15 +133,15 @@ $.ajax({
 					<div class="post">
 						<div class="container">
 							<div class="container" id="video" >
-								<video controls crossorigin playsinline poster="../videos/tb.jpg">
-									<source src="../videos/video.mp4" type="video/mp4" size="720">
+								<video controls crossorigin playsinline poster="${$thumbnail}">
+									<source src="${$videourl}" type="video/mp4" size="720">
 								</video>
 							</div>
 						</div>
 						<div class="video-details" style="margin-top:-20px;" id="comment-${$id}">
 							<img src="../images/default.svg" height="15px" class="align-middle" id="video-type-title-image">
-							<div id="video-type-title" class="inline-block">Tulflix</div>
-							<div id="video-type-title" class="ago-time">4h ago</div>
+							<div id="video-type-title" class="inline-block">${$channel}</div>
+							<div id="video-type-title" class="ago-time">${$ago}</div>
 							<div id="react"  class="inline-block" style="width:50%;transform:translateX(180px)">
 								<div>
 									<img src="../images/like.svg" height="18px" class="inline">

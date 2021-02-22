@@ -2,11 +2,12 @@
 <userfeed>   
     <post>
 		<id>1</id>
-		<thumbnail>../users/images/cover/1.jpg</thumbnail>
+		<thumbnail>../users/images/cover/jerson.jpg</thumbnail>
         <video>../videos/video.mp4</video>
         <ago>4h ago</ago>
         <channel>Tulflix</channel>
         <type>video</type>
+        <postcontent>Video upload by Jerson Reyes</postcontent>
         <comments>
             <comment>
                 <author>Louise Calooy</author>
@@ -20,7 +21,7 @@
         <ago>4h ago</ago>
         <channel>John Mark Morada</channel>
         <type>text</type>
-        <content>Sapagkat mahalaga, kung ang tao ay di-pipiliting manghawakan bilang ... at edukasyon na maitaguyod ang paggalang sa mga karapatan at kalayaang ito at sa ... Ang bawat tao'y may karapatan sa buhay, kalayaan at kapanatagan ng sarili.</content>
+        <postcontent>Sapagkat mahalaga, kung ang tao ay di-pipiliting manghawakan bilang ... at edukasyon na maitaguyod ang paggalang sa mga karapatan at kalayaang ito at sa ... Ang bawat tao'y may karapatan sa buhay, kalayaan at kapanatagan ng sarili.</postcontent>
         <comments>
             <comment>
                 <author>Louise Calooy</author>

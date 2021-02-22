@@ -65,9 +65,9 @@ $(document).ready(function() {
 
 
 $.ajax({
-    url: "../data/userfeed.xml",
+    url: "../../data/userfeed.xml",
     success: function() {
-        $.get('../data/userfeed.xml', null, function(posts, textStatus) {
+        $.get('../../data/userfeed.xml', null, function(posts, textStatus) {
             $(posts).find('post').each(function(userindex) {
                 $thumnail = $(posts).find('thumbnail').eq(userindex).text();
 				
@@ -85,16 +85,16 @@ $.ajax({
 								<p>Sapagkat mahalaga, kung ang tao ay di-pipiliting manghawakan bilang ... at edukasyon na maitaguyod ang paggalang sa mga karapatan at kalayaang ito at sa ... Ang bawat tao'y may karapatan sa buhay, kalayaan at kapanatagan ng sarili.</p>
 							</div>
 							<div class="video-details" style="margin-top:-30px;" id="comment-${$id}">
-								<img src="../images/default.svg" height="15px" class="align-middle" id="video-type-title-image">
+								<img src="../../images/default.svg" height="15px" class="align-middle" id="video-type-title-image">
 								<div id="video-type-title" class="inline-block">John Mark Morada</div>
 								<div id="video-type-title" class="ago-time">2h ago</div>
 								<div id="react"  class="inline-block" style="width:50%;transform:translateX(250px)">
 									<div>
-										<img src="../images/like.svg" height="18px" class="inline">
+										<img src="../../images/like.svg" height="18px" class="inline">
 										<span>Like</span>
 									</div>
 									<div>
-										<img src="../images/share.svg" height="18px" class="inline">
+										<img src="../../images/share.svg" height="18px" class="inline">
 										<span>Share</span>
 									</div>
 								</div>
@@ -112,7 +112,7 @@ $.ajax({
 								$(`
 									<div class="main-chat-block">
 										<div class="inline-block main-chat-picture">
-											<div style="background-image: url('../images/person.svg');" class="side-chat-image"></div>
+											<div style="background-image: url('../../images/person.svg');" class="side-chat-image"></div>
 										</div>
 										<div class="main-chat-user inline-block">
 											<div class="inline">
@@ -133,26 +133,26 @@ $.ajax({
 					<div class="post">
 						<div class="container">
 							<div class="container" id="video" >
-								<video controls crossorigin playsinline poster="../videos/tb.jpg">
-									<source src="../videos/video.mp4" type="video/mp4" size="720">
+								<video controls crossorigin playsinline poster="../../videos/tb.jpg">
+									<source src="../../videos/video.mp4" type="video/mp4" size="720">
 								</video>
 							</div>
 						</div>
 						<div class="video-details" style="margin-top:-20px;" id="comment-${$id}">
-							<img src="../images/default.svg" height="15px" class="align-middle" id="video-type-title-image">
+							<img src="../../images/default.svg" height="15px" class="align-middle" id="video-type-title-image">
 							<div id="video-type-title" class="inline-block">Tulflix</div>
 							<div id="video-type-title" class="ago-time">4h ago</div>
 							<div id="react"  class="inline-block" style="width:50%;transform:translateX(180px)">
 								<div>
-									<img src="../images/like.svg" height="18px" class="inline">
+									<img src="../../images/like.svg" height="18px" class="inline">
 									<span>Like</span>
 								</div>
 								<div>
-									<img src="../images/share.svg" height="18px" class="inline">
+									<img src="../../images/share.svg" height="18px" class="inline">
 									<span>Share</span>
 								</div>
 								<div>
-									<img src="../images/add.svg" height="18px" class="inline">
+									<img src="../../images/add.svg" height="18px" class="inline">
 									<span>Add to Playlist</span>
 								</div>
 							</div>
@@ -168,7 +168,7 @@ $.ajax({
 							$(`
 								<div class="main-chat-block">
 									<div class="inline-block main-chat-picture">
-										<div style="background-image: url('../images/person.svg');" class="side-chat-image"></div>
+										<div style="background-image: url('../../images/person.svg');" class="side-chat-image"></div>
 									</div>
 									<div class="main-chat-user inline-block">
 										<div class="inline">
@@ -193,9 +193,9 @@ $.ajax({
 })
 
 $.ajax({
-    url: "../data/following.xml",
+    url: "../../data/following.xml",
     success: function() {
-        $.get('../data/following.xml', null, function(user, textStatus) {
+        $.get('../../data/following.xml', null, function(user, textStatus) {
             $(user).find('user').each(function(userindex) {
 				$name = $(user).find('name').eq(userindex).text();
 				$picture = $(user).find('pictureurl').eq(userindex).text();
@@ -204,11 +204,11 @@ $.ajax({
 				if($active == 0) {
 					$active_output = '<div class="circle-active inline-block active-status-online"></div>';
 				}	else {
-					$active_output = '<img src="../images/wifi.svg" class="space-left active-status"></img>';
+					$active_output = '<img src="../../images/wifi.svg" class="space-left active-status"></img>';
 				}
 				$(`
 						<div class="content">
-							<img src="../${$picture}" class="story-person-image"></img>
+							<img src="../../${$picture}" class="story-person-image"></img>
 							<span>${$name}</span>${$active_output}
 						</div>
 				`).appendTo('#following');
