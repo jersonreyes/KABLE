@@ -184,6 +184,7 @@ span {
 #main-body {
 	vertical-align:top;
 	height:100%;
+	width:79%;
 	flex-grow: 1;
 }
 
@@ -742,7 +743,6 @@ span, p {
 }
 
 .container {
-	display: flex;
 	position:relative;
 }
 
@@ -791,7 +791,7 @@ span, p {
 }
 
 #following {
-	height:40vh;
+	height:auto;
 	margin-left:-25px;
 	overflow:Hidden;
 }
@@ -1086,7 +1086,7 @@ a {
 	position:relative; 
 }
 
-#video-details {
+.video-details {
 	padding:20px;
 }
 
@@ -1109,6 +1109,13 @@ a {
 #video-title {
 	color: white;
 	font-size:1.2em;
+	margin-bottom: 5px;
+}
+
+#comment-title {
+	color: white;
+	font-size:1em;
+	margin-top:7%;
 	margin-bottom: 5px;
 }
 
@@ -1367,7 +1374,6 @@ a {
 	background-color: #7724eb;
 	color:White;
 	padding:10px 30px;
-	border-radius: 0px;
 	border: none;
 	transition: 200ms ease;
 	margin-top:20px;
@@ -1590,6 +1596,14 @@ a {
 	  opacity:0.5;
   }
 
+  #story-container {
+	  display:none;
+  }
+
+  #story-container.active {
+	  display:Block;
+  }
+
   .story-block.active {
 	opacity:1;
   }
@@ -1611,3 +1625,226 @@ a {
 	  color:white;
 	  font-size:25px;
   }
+
+  .video-container {
+	  border-radius:25px;
+	  background-color:rgba(255,255,255,0.1);
+	  width:220px;
+	  margin-bottom: 5%;
+	  display:inline-block;
+	  margin-right:2%;
+  }
+
+  .video-picture {
+	  height:130px;
+	  width:100%;
+	  background-position:center;
+	  border-radius: 25px;
+  }
+
+  #video-pic1 {
+	  background-image: url('../users/images/cover/jerson.jpg');
+	  background-size:cover;
+  }
+
+  .video-title {
+	  color:White;
+	  vertical-align: middle;
+  }
+
+  .video-info {
+	padding: 5px 20px;
+	padding-bottom: 20px;
+  }
+
+  .divider {
+	  height: 1px;
+	  margin-top:10%;
+	  margin-bottom:10%;
+	  width:80%;
+	  margin-left:10%;
+	  background-color: #444444;
+  }
+
+  .video-creator-picture {
+	  height:20px;
+	  vertical-align: middle;
+	  border-radius:50px;
+	  width:auto;
+  }
+
+  .ago-time, .video-views {
+	  color:gray;
+  }
+
+
+  #video-container, #video-container .container {
+	  width:100%;
+	  vertical-align: top;
+  }
+  #video-container {
+	  width:70%;
+  }
+
+  #feed-video-container, #feed-video-container .container {
+	width:100%;
+	vertical-align: top;
+}
+#feed-video-container {
+	width:70%;
+}
+
+  #add-comment {
+	background-color:#383838;
+	outline:none;
+	border:none;
+	padding:10px;
+	color:white;
+	border-radius:25px;
+	height:10px;
+	width:85%;
+  }
+
+  #done {
+	  background-color:#7724eb;
+	  outline:none;
+	  border:none;
+	  color:white !important;
+	  border-radius:25px;
+	  padding:8px;
+	  width:10%;
+  }
+
+  .post {
+	background-color:#252525;
+	border-radius:25px;
+	margin-bottom:50px;
+  }
+#video-container {
+    border-radius:25px;
+    overflow:hidden;
+}
+
+#feed-video-container {
+    border-radius:25px;
+    overflow:hidden;
+}
+
+#video-side {
+	width:20%;
+	height:100%;
+	margin-left:3%;
+}
+
+#video-side .video-container {
+	margin-bottom:5%;
+	position:Relative;
+}
+
+#upload-video-drag {
+	background-color:rgb(48, 48, 48);
+	height:70vh;
+	text-align:Center;
+	color:White;
+	vertical-align: top;
+	width:60%;
+	border-radius:25px;
+}
+
+.curved {
+	border-radius:25px;
+}
+
+#upload-video-drag p:nth-child(1) {
+	margin-top:30vh;
+	font-weight:Bold;
+	font-size:1.2em;
+}
+
+#upload-video-drag p:nth-child(2) {
+	font-size:0.8em;
+	color:Gray;
+}
+
+#new-side {
+	color:White;
+	margin-left:4%;
+	width:30%;
+}
+
+#new-post-input {
+	background-color:rgb(48, 48, 48);
+	height:100px;
+	width: 70%;
+	border-radius:25px;
+	border:none;
+	padding: 25px;
+	font-family:Arial;
+}
+
+#new-description {
+	background-color:transparent;
+	border:1px solid white;
+	border-radius:25px;
+	font-family:arial;
+	color:white;
+	padding:20px;
+	text-align:top;
+	height:100px;
+	vertical-align:text-top;
+	width:100%;
+}
+
+#new-title {
+	background-color:transparent;
+	border:none;
+	border-bottom:1px solid white;
+	color:White;
+	width:100%;
+	padding:15px;
+	height:10px;
+}
+
+#sort-by {
+	background-color:rgba(56, 56, 56, 0.726);
+	padding:25px;
+	margin-bottom:4%;
+	width:160px;
+	position:Absolute;
+	right:100px;
+	padding-right:0px;
+	border-radius:25px;
+}
+
+#new-title:Focus, #new-description:Focus {
+	outline:none;
+}
+
+
+.dropdown-btn {
+	border-radius:25px;
+	border: 1px solid white;
+	display:inline;
+	padding:15px;
+	font-size:0.8em;
+	padding-right:0px;
+}
+
+#new-description::placeholder, #new-title::placeholder {
+	color:White;
+}
+
+
+#new-side p {
+	color:White;
+	font-size:1.2em;
+}
+
+.post-contents {
+	background-color:rgba(56, 56, 56, 0.726);
+	height:100%;
+	border-radius:25px;
+	color:white;
+	padding:25px;
+	width:92%;
+}

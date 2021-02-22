@@ -1,0 +1,37 @@
+<?xml version='1.0'?>   
+<userfeed>   
+    <post>
+		<id>1</id>
+		<thumbnail>../users/images/cover/1.jpg</thumbnail>
+        <video>../videos/video.mp4</video>
+        <ago>4h ago</ago>
+        <channel>Tulflix</channel>
+        <type>video</type>
+        <comments>
+            <comment>
+                <author>Louise Calooy</author>
+                <commentago>1h Ago</commentago>
+                <commentcontent>HAHAHAHAHAHAHA JERSON</commentcontent>
+            </comment>
+        </comments>
+    </post>
+    <post>
+		<id>2</id>
+        <ago>4h ago</ago>
+        <channel>John Mark Morada</channel>
+        <type>text</type>
+        <content>Sapagkat mahalaga, kung ang tao ay di-pipiliting manghawakan bilang ... at edukasyon na maitaguyod ang paggalang sa mga karapatan at kalayaang ito at sa ... Ang bawat tao'y may karapatan sa buhay, kalayaan at kapanatagan ng sarili.</content>
+        <comments>
+            <comment>
+                <author>Louise Calooy</author>
+                <commentago>1h Ago</commentago>
+                <commentcontent>Ayos yan 2ll</commentcontent>
+            </comment>
+            <comment>
+                <author>Jerson Reyes</author>
+                <commentago>2h Ago</commentago>
+                <commentcontent>NICE</commentcontent>
+            </comment>
+        </comments>
+    </post>
+</userfeed>
