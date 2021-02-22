@@ -1,3 +1,18 @@
+/*        
+
+	[KABLE]
+	
+	DEVELOPED AND DESIGNED BY TEAM KABLE
+	PROPERTY ARTWORK | COPYRIGHT © TEAM KABLE 2021
+	
+	REYES, JERSON A.
+    SANTOS, JOHN MIKO R.
+    MORADA, JOHN MARK D.
+    CALOOY, LOUISE I.
+    BSIT 2i-G1
+
+*/
+
 if ($("#no-conversation").length)
     $('#send-control, .main-chat-user-settings, .main-chat-user-profile').addClass('display-none');
 
