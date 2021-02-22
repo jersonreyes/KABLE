@@ -216,3 +216,102 @@ $.ajax({
 		})
 	}
 })
+
+//STORY
+$.ajax({
+    url: "../data/following.xml",
+    success: function() {
+        $.get('../data/following.xml', null, function(user, textStatus) {
+            $(user).find('user').each(function(userindex) {
+				$name = $(user).find('name').eq(userindex).text();
+				$picture = $(user).find('pictureurl').eq(userindex).text();
+				$active = $(user).find('activestatus').eq(userindex).text();
+				$status = '';
+				$storytime = $(user).find('ago').eq(userindex).text();
+				if($active == 1) {
+					$status = '<div class="status relative right story-wrapper"></div>';
+				}
+				$(`
+				<div class="inline-block align-top story-container">
+				${$status}
+				<div id="story-following">
+					<img src="../${$picture}" class="sidebar-following-person align-middle"></img>
+				</div>
+				<p class="story-user-name">${$name}</p>
+				<p class="story-user-time">${$storytime}</p>
+			</div>
+				`).appendTo('#followed-channels');
+			})
+		})
+	}
+})
+
+//VIDEOS
+$.ajax({
+    url: "../data/vidfeed.xml",
+    success: function() {
+        $.get('../data/vidfeed.xml', null, function(user, textStatus) {
+            $(user).find('video').each(function(userindex) {
+				$title = $(user).find('title').eq(userindex).text();
+				$channel_picture = $(user).find('channel_picture').eq(userindex).text();
+				$channel = $(user).find('channel_name').eq(userindex).text();
+				$thumbnail = $(user).find('thumbnail').eq(userindex).text();
+				$ago = $(user).find('ago').eq(userindex).text();
+				$views = $(user).find('views').eq(userindex).text();
+				$(`
+				<div class="video-container">
+					<div class="video-picture" style="background-image:url('${$thumbnail}')"></div>
+					<div class="video-info">
+						<p class="video-title">${$title}</p>
+						<img src="${$channel_picture}" class="video-creator-picture"/>
+						<span class="video-creator-name">${$channel}</span>
+						<div class="divider"></div>
+						<span class="ago-time">${$ago}</span>
+						<span class="video-views">${$views}</span>
+					</div>
+				</div>
+				`).appendTo('#today-videos');
+			})
+		})
+	}
+})
+
+//DYNAMIC LOAD FUNCTION
+function loadvid($amount, $appendto) {
+$runs = 0;
+$.ajax({
+    url: "../data/vidfeed.xml",
+    success: function() {
+        $.get('../data/vidfeed.xml', null, function(user, textStatus) {
+            $(user).find('video').each(function(userindex) {
+				if($runs >= $amount) return false;
+				$title = $(user).find('title').eq(userindex).text();
+				$channel_picture = $(user).find('channel_picture').eq(userindex).text();
+				$channel = $(user).find('channel_name').eq(userindex).text();
+				$thumbnail = $(user).find('thumbnail').eq(userindex).text();
+				$ago = $(user).find('ago').eq(userindex).text();
+				$views = $(user).find('views').eq(userindex).text();
+				
+				$(`
+				<div class="video-container">
+					<div class="video-picture" style="background-image:url('${$thumbnail}')"></div>
+					<div class="video-info">
+						<p class="video-title">${$title}</p>
+						<img src="${$channel_picture}" class="video-creator-picture"/>
+						<span class="video-creator-name">${$channel}</span>
+						<div class="divider"></div>
+						<span class="ago-time">${$ago}</span>
+						<span class="video-views">${$views}</span>
+					</div>
+				</div>
+				`).appendTo($appendto);
+				$runs++;
+			})
+		})
+	}
+})
+}
+
+loadvid(2,"#video-side");
+
+loadvid(8,"#playlist-container");
