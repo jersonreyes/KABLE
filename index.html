@@ -46,7 +46,7 @@
             <label class="white">Username</label><br/>
             <input placeholder="juandelacruz" class="login" id="login-username"></input><br/><br/><br/>
             <label class="white">Password</label><br/>
-            <input placeholder="*****" class="login" id="login-password" type="password"></input><br/>
+            <input placeholder="*****" class="login" id="login-password" type="password"></input><br><br/>
             <p class="error">Wrong Username and Password combination. <br/>Default password and username: 12345 <br/>for project submission</p>
             <input id="login-btn" type="submit" value="Login"></input>
 
@@ -59,7 +59,7 @@
     <script src="js/jquery.min.js"></script>
     <script>function verify() {
         $username = $("#login-username").val();
-        $password = $("#login-password").val();
+        $password = $("#login-password").val(); 
         if($username == "12345" && $password == "12345") {
                 e.preventDefault();
         }	else {
@@ -67,5 +67,6 @@
             return false;
         }
     }</script>
+
 </body>
 </html>
